@@ -1,0 +1,21 @@
+{
+  "name": "devnull-ir/excel-driver",
+  "description": "Driver for Excel in PHP.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "DevNull(Ali)",
+      "email": "alishahbazpor110@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "devnull-ir/facades": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "ExcelDriver\\": "src/"
+    }
+  }
+}
