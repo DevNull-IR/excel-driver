@@ -6,7 +6,7 @@ use Facades\Facade;
 
 
 /**
- * @method static array|bool openDocument(string $file_path, bool $isNullCreated = true)
+ * @method static array|bool openDocument(string $file_path, bool $isNullCreated = true, bool $compailer = false)
  *
  * @method static bool editDocument(string $file_path, array $data = [], bool $isNullCreated = false)
  *

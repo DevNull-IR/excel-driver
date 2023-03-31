@@ -1,6 +1,8 @@
 <?php
 namespace ExcelDriver;
 
+include "helper/helper.php";
+
 
 class ExcelService
 {
@@ -34,6 +36,12 @@ class ExcelService
     }
 
 
+    private function CompailFunc()
+    {
+
+    }
+
+
     /**
      * @param string $file_path
      * @param bool $isNullCreated
@@ -41,6 +49,7 @@ class ExcelService
      */
     public function openDocument(string $file_path, bool $isNullCreated = true, bool $compailer = false): array|bool
     {
+
         if ($this->check($file_path, $isNullCreated)){
             $file = file_get_contents($file_path);
             $exp = explode(PHP_EOL, $file);
@@ -60,7 +69,13 @@ class ExcelService
                             continue;
                         }
                         if (!str_starts_with($itemArray, ",")){
-                            $implode[$key][] = eval("return $itemArray;");
+                            try {
+                                $implode[$key][] = eval("return $itemArray;");
+                            }catch (\Exception $exception){
+                                $implode[$key][] = "#VALUES";
+                            }catch (\Throwable $throwable){
+                                $implode[$key][] = "#VALUES";
+                            }
                         }else{
                             $implode[$key] = explode(",", substr($itemArray, 1, strlen($itemArray)));
                         }
