@@ -4,6 +4,7 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "license": "MIT",
+  "type": "library",
   "authors": [
     {
       "name": "DevNull(Ali)",
