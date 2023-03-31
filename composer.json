@@ -2,6 +2,7 @@
   "name": "devnull-ir/excel-driver",
   "description": "Driver for Excel in PHP.",
   "minimum-stability": "stable",
+  "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
