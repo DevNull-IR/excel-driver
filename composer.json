@@ -13,9 +13,17 @@
     "php": "^8.1",
     "devnull-ir/facades": "dev-main"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
   "autoload": {
     "psr-4": {
       "ExcelDriver\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
     }
   }
 }
