@@ -2,9 +2,7 @@
 The first array that starts the work, the second array that is in that array becomes Excel rows, and the values that are placed in the second arrays become Excel columns.
 # How to use
 
-![Excel Derver](https://raw.githubusercontent.com/DevNull-IR/excel-driver/main/github-header-image%20(1).png)
-![Excel Derver](https://raw.githubusercontent.com/DevNull-IR/excel-driver/main/github-header-image%20(1).png)
-![alt text](http://url/to/img.png)
+# ![Excel Derver](https://raw.githubusercontent.com/DevNull-IR/excel-driver/main/github-header-image%20(1).png)
 
 
 **The first translation:**
